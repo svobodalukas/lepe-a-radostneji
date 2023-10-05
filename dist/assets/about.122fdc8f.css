@@ -1,0 +1,1 @@
+body{display:grid;grid-template-areas:"header" "main" "footer";grid-template-rows:4rem minmax(0,1fr) 5rem;grid-template-columns:minmax(0,1fr)}main:where(.astro-T25SPKNY){grid-area:main}

@@ -1,0 +1,73 @@
+---
+import { readAll } from "../lib/markdoc/read";
+import { blog } from "../lib/markdoc/frontmatter.schema";
+import PageLayout from "../layouts/PageLayout.astro";
+import PageMeta from "../components/PageMeta.astro";
+import Title from "../components/Title.astro";
+import { SITE_TITLE } from "../config";
+
+const posts = await readAll({
+  directory: "blog",
+  frontmatterSchema: blog,
+});
+
+const sortedPosts = posts
+  .filter((p) => p.frontmatter.draft !== true)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.date).valueOf() -
+      new Date(a.frontmatter.date).valueOf()
+  );
+---
+
+<PageLayout>
+  <PageMeta title={`Lépe a radostněji | ${SITE_TITLE}`} slot="meta" />
+  <Fragment slot="main">
+    <Title title="Lépe & radostněji" big={true} />
+    <p class="text-xl sm:text-2xl text-text-muted">Sbírka UX/UI fuckupů</p>
+    <section class="my-16">
+      <ul>
+        {
+          sortedPosts.map((post) => {
+            const formattedDate = new Date(
+              post.frontmatter.date
+            ).toLocaleDateString("cs-CZ", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            });
+            return (
+              <li class="block mb-4">
+                <article class={`rounded-lg p-4 pb-0 md:p-6 md:pb-0 ${post.frontmatter.bgColor}`}>
+                  <a
+                    href={`/post/${post.slug}`}
+                    class="flex justify-between gap-4 unset bg-img"
+                  >
+                    <div class="pb-4 md:pb-6 flex-1 flex flex-col justify-between">
+                      <time class="text-text-muted text-sm" datetime={post.frontmatter.date.toISOString()}>
+                        {formattedDate}
+                      </time>
+
+                      <div>
+                        <h2 class="font-heading leading-tight text-lg xs:text-xl md:text-2xl font-bold mb-1">
+                          {post.frontmatter.title}
+                        </h2>
+                        <p class="hidden xs:block text-sm leading-tight">
+                          {post.frontmatter.description}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="relative w-1/2 md:w-2/5">
+                      <img class="block rounded-tl-md  rounded-tr-md" src={`/public/${post.frontmatter.ogImagePath}`} alt={post.frontmatter.title}>
+                    </div>
+                  </a>
+                </article>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </section>
+  </Fragment>
+  
+</PageLayout>

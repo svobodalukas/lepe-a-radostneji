@@ -1,0 +1,14 @@
+---
+type Props = {
+  title: string;
+  big: boolean;
+};
+
+const { title, big } = Astro.props;
+---
+
+<h1
+  class:list={big ? 'text-normal text-text-heading mt-6 mb-4 text-5xl sm:text-7xl md:text-8xl' : 'text-normal text-text-heading mt-6 mb-4 text-4xl sm:text-5xl md:text-6xl lg:text-8xl'}
+>
+  { title }
+</h1>
