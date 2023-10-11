@@ -1,0 +1,15 @@
+---
+const { post, prev = true } = Astro.props
+---
+
+{post && 
+  <div class:list={`flex flex-col mb-4 ${prev ? '' : 'text-right items-end'}`}>
+    {post.slug && 
+    <h4 class="text-xs text-text-muted mb-0">{prev ? 'Následuje' : 'Předchozí'}</h4>
+    <a href={`/post/${post.slug}/`} class:list={`w-fit flex gap-2 items-center ${prev ? '' : 'flex-row-reverse'}`}>
+      <i class:list={`fa-solid fa-arrow-${prev ? 'left' : 'right'}`} aria-hidden="true" title={`${prev ? 'Předchozí' : 'Následující'}`}></i>
+      {post.frontmatter.title}
+    </a>
+    }
+  </div>
+}

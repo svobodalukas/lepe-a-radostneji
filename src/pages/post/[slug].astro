@@ -3,8 +3,10 @@ import { readOne, readAll } from "../../lib/markdoc/read";
 import { blog } from "../../lib/markdoc/frontmatter.schema";
 import Renderer from "../../components/Renderer.astro";
 import BlogPostMeta from "../../components/BlogPostMeta.astro";
+import PrevNextTeaser from "../../components/PrevNextTeaser.astro"
 import ContentLayout from "../../layouts/ContentLayout.astro";
 import { SITE_URL } from "../../config";
+import { sortByDate } from "../../utils/sortByDate.js"
 
 export async function getStaticPaths() {
   const posts = await readAll({
@@ -16,11 +18,35 @@ export async function getStaticPaths() {
   const filteredPosts = posts
     .filter((p) => p.frontmatter.draft !== true)
     .filter(({ frontmatter }) => !frontmatter.external);
+  /*
+    return filteredPosts.map((post) => {
+      return { params: { 
+        slug: post.slug 
+      }};
+    });
+  */
+  const numberOfPosts = filteredPosts.length // Total of all posts
 
-  return filteredPosts.map((post) => {
-    return { params: { slug: post.slug } };
-  });
+  return filteredPosts.sort(sortByDate).map((post, i) => ({ // Map() all posts after sorting
+    params: {
+      slug: post.slug,
+    },
+    props: {
+      post,
+      prevPost: // Previous post
+        i + 1 === numberOfPosts // If the current post is the oldest
+          ? { frontmatter: ""}
+          : filteredPosts[i + 1],
+      nextPost: // Next post
+        i === 0 // If the current post is the newest
+          ? { frontmatter: "" }
+          : filteredPosts[i - 1],
+    },
+  }))
 }
+
+// Get properties (frontmatter) for the previous/next posts
+const { prevPost, nextPost } = Astro.props
 
 const { slug } = Astro.params;
 if (typeof slug !== "string") {
@@ -49,4 +75,8 @@ const ogImageAbsoluteUrl =
     slot="meta"
   />
   <Renderer content={content} slot="content" />
+  <div slot="article-footer" class="py-8 sm:flex sm:justify-between gap-4">
+    {nextPost && <PrevNextTeaser post={nextPost} prev={true} />}
+    {prevPost && <PrevNextTeaser post={prevPost} prev={false} />}
+  </div>
 </ContentLayout>

@@ -49,8 +49,9 @@ const formattedDate = new Date(date).toLocaleDateString("cs-CZ", {
     <main id="main">
       <section class="blog-post max-w-none prose prose-bubblegum">
         <Title title={title}  big={false} />
-        <time class="text-xs inline-block text-text-muted mb-6 px-6 py-2 rounded-full bg-bg-code">{formattedDate}</time>
+        <time class="text-xs inline-block mb-6 px-6 py-2 rounded-full bg-bg-code">{formattedDate}</time>
         <slot name="content" />
+        <slot name="article-footer" />
       </section>
     </main>
     <Footer />

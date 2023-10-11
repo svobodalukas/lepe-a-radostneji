@@ -4,7 +4,7 @@ title: "Vlevo dole"
 description: "Proč má smysl dodržovat standardy."
 ogImagePath: "/images/230902-vlevo-dole.webp"
 bgColor: "bg-bg-purple"
-date: 2023-10-04
+date: 2023-09-02
 ---
 
 Vlevo dole viděl Miloš Zeman článek od Peroutky. Možná právě díky tomu má návštěvník webu [auto.cz](https://auto.cz) možnost zavřít modální okno právě v tomto jedinečném místě.
