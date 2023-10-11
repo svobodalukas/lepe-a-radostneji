@@ -24,6 +24,7 @@ module.exports = {
         },
         text: {
           body: "rgb(var(--color-text-body) / <alpha-value>)",
+          contrast: "rgb(var(--color-text-contrast) / <alpha-value>)",
           bold: "rgb(var(--color-text-bold) / <alpha-value>)",
           heading: "rgb(var(--color-text-heading) / <alpha-value>)",
           muted: "rgb(var(--color-text-muted) / <alpha-value>)",

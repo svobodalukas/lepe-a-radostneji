@@ -21,6 +21,7 @@
 
         /* Custom #2A2239 */
         --color-text-body: 42 34 57;
+        --color-text-contrast: 12 4 27;
         /* Custom #2A2239 */
         --color-text-heading: 42 34 57;
         /* Custom #2A2239 */
@@ -71,6 +72,7 @@
 
         /* tailwind slate-300 */
         --color-text-body: 203 213 225;
+        --color-text-contrast: 223 233 245;
         /* white */
         --color-text-heading: 255 255 255;
         /* white */
@@ -98,7 +100,7 @@
         --color-bg-yellow: hsl(55, 97%, 20%);
         --color-bg-purple: hsl(251, 91%, 20%); 
         --color-bg-red: hsl(0, 93%, 20%);
-        --color-border-blue: hsl(204, 94%, 20%);
+        --color-border-blue: hsl(204, 94%, 30%);
         --color-border-green: hsl(141, 84%, 30%);
         --color-border-orange: hsl(34, 100%, 30%);
         --color-border-yellow: hsl(55, 97%, 30%);
@@ -243,6 +245,10 @@
     }
     .teaser-red:hover {
         box-shadow: 4px 4px 0 theme('colors.border.red');
+    }
+
+    .teaser:hover {
+        color: theme('colors.text.contrast')
     }
 
     /* ------ GLOBAL STYLES - END ------ */
