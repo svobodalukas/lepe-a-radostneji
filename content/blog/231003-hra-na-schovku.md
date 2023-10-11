@@ -7,7 +7,7 @@ bgColor: "bg-bg-green"
 date: 2023-10-03
 ---
 
-Loni na podzim jsem se chystal na výlet do Jeseníků. Chtěl si koupit jízdenku na zastávku _Karlova Studánka, rozcestí Hvězda_. Protože jsem progresivní člověk a ne žádný boomer, tak jsem pro nákup použil mobil. Bohužel.
+Loni na podzim jsem se chystal na výlet do Jeseníků. Chtěl jsem si koupit jízdenku na zastávku _Karlova Studánka, rozcestí Hvězda_. Protože jsem progresivní člověk a ne žádný boomer, tak jsem si jízdenku chtěl koupit přes web. Bohužel.
 
 ![Appka Arriva - původní verze](/images/231003-hra-na-schovku-1.webp)
 
@@ -17,6 +17,8 @@ Vývojář 2: _Ser na to, normálně to zkrať. Dej tam `text-overflow: ellipsis
 
 Zkrácení delšího obsahu je naprosto v pořádku do té chvíle, dokud nejde o klíčovou informaci pro uživatele. Já bohužel mohl jen hádat, která z těch zastávek je ta moje správná. Prostě jsem vybíral od shora dolů. Vy to buď nezkracujte a dejte to na více řádků (pokud je to důležité) nebo tomu doplňte třeba tooltip (pokud to důležité není a není to čistě mobilní appka).
 
-Arriva to mimochodem už před pár měsíci opravila a vy tak můžete konečně vyrazit bezpečně do Jeseníků.
+Překvapivě lépe to funguje na mobilní verzi webu a úplně bezchybně v appce. Takže asi budu opravdu boomer.
 
 ![Appka Arriva - opravená verze](/images/231003-hra-na-schovku-2.webp)
+
+P.S. Šlo by samozřejmě zadat rovnou i "Hvězda", ale to by pak byla nuda.
