@@ -3,7 +3,7 @@ external: false
 title: "Hra na schovku"
 description: "Jak je důležité u zkracování obsahu trochu přemýšlet."
 ogImagePath: "/images/231003-hra-na-schovku-1.webp"
-bgColor: "bg-bg-green"
+bgColor: "teaser-green"
 date: 2023-10-03
 ---
 

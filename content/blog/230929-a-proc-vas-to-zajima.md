@@ -3,7 +3,7 @@ external: false
 title: "A proč vás to vůbec zajímá?"
 description: "Ptejte se na co chcete, ale asi vám občas někdo neodpoví."
 ogImagePath: "/images/230929-a-proc-vas-to-zajima-2.webp"
-bgColor: "bg-bg-red"
+bgColor: "teaser-red"
 date: 2023-09-29
 ---
 Tak dlouho do mě v mé oblíbené síti kaváren hustili, jestli už mám jejich věrnostní kartičku, až jsem raději vyměkl a pustil se do registrace. Obsah formuláře mě ale trochu překvapil.

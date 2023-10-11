@@ -49,6 +49,12 @@
         --color-bg-yellow: hsl(55, 97%, 88%);
         --color-bg-purple: hsl(251, 91%, 95%);
         --color-bg-red: hsl(0, 93%, 94%);
+        --color-border-blue: hsl(204, 94%, 25%);
+        --color-border-green: hsl(141, 84%, 25%);
+        --color-border-orange: hsl(34, 100%, 25%);
+        --color-border-yellow: hsl(55, 97%, 25%);
+        --color-border-purple: hsl(251, 91%, 25%);
+        --color-border-red: hsl(0, 93%, 25%);
 
         /* tailwind orange-100 #ffedd5 */
         --color-border-code: 255 237 213;
@@ -92,6 +98,12 @@
         --color-bg-yellow: hsl(55, 97%, 20%);
         --color-bg-purple: hsl(251, 91%, 20%); 
         --color-bg-red: hsl(0, 93%, 20%);
+        --color-border-blue: hsl(204, 94%, 20%);
+        --color-border-green: hsl(141, 84%, 30%);
+        --color-border-orange: hsl(34, 100%, 30%);
+        --color-border-yellow: hsl(55, 97%, 30%);
+        --color-border-purple: hsl(251, 91%, 30%); 
+        --color-border-red: hsl(0, 93%, 30%);
 
         /* Tailwind yellow-100 #fef9c3 */
         --color-border-code: 254 243 199;
@@ -212,6 +224,25 @@
     }
     .teaser-red {
         background-color: theme('colors.bg.red');
+    }
+
+    .teaser-blue:hover {
+        box-shadow: 4px 4px 0 theme('colors.border.blue');
+    }
+    .teaser-green:hover {
+        box-shadow: 4px 4px 0 theme('colors.border.green');
+    }
+    .teaser-orange:hover {
+        box-shadow: 4px 4px 0 theme('colors.border.orange');
+    }
+    .teaser-yellow:hover {
+        box-shadow: 4px 4px 0 theme('colors.border.yellow');
+    }
+    .teaser-purple:hover {
+        box-shadow: 4px 4px 0 theme('colors.border.purple');
+    }
+    .teaser-red:hover {
+        box-shadow: 4px 4px 0 theme('colors.border.red');
     }
 
     /* ------ GLOBAL STYLES - END ------ */

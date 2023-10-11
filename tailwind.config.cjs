@@ -45,6 +45,12 @@ module.exports = {
         },
         border: {
           code: "rgb(var(--color-border-code) / <alpha-value>)",
+          blue: "var(--color-border-blue)",
+          green: "var(--color-border-green)",
+          orange: "var(--color-border-orange)",
+          yellow: "var(--color-border-yellow)",
+          purple: "var(--color-border-purple)",
+          red: "var(--color-border-red)",
         },
       },
       typography: (theme) => ({

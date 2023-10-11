@@ -3,7 +3,7 @@ external: false
 title: "Zkrať to"
 description: "Opět o zkracování a k tomu ještě trocha moudra o edge casech"
 ogImagePath: "/images/231010-hn-zkratka-teaser.webp"
-bgColor: "bg-bg-blue"
+bgColor: "teaser-blue"
 date: 2023-10-10
 ---
 

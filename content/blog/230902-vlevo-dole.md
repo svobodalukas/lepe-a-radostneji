@@ -3,7 +3,7 @@ external: false
 title: "Vlevo dole"
 description: "Proč má smysl dodržovat standardy."
 ogImagePath: "/images/230902-vlevo-dole.webp"
-bgColor: "bg-bg-purple"
+bgColor: "teaser-purple"
 date: 2023-09-02
 ---
 

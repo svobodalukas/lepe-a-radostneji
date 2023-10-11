@@ -3,7 +3,7 @@ external: false
 title: "You shall not pass!"
 description: "Jak úspěšně zabránit uživatelům, aby u vás nakoupili."
 ogImagePath: "/images/231011-holokolo-teaser.webp"
-bgColor: "bg-bg-red"
+bgColor: "teaser-red"
 date: 2023-10-11
 ---
 

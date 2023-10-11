@@ -38,11 +38,11 @@ const sortedPosts = posts
               day: "numeric",
             });
             return (
-              <li class="block mb-4">
-                <article class={`rounded-lg p-4 pb-0 md:p-6 md:pb-0 ${post.frontmatter.bgColor}`}>
+              <li class="block mb-4 sm:mb-8">
+                <article>
                   <a
                     href={`/post/${post.slug}`}
-                    class="flex justify-between gap-4 unset bg-img"
+                    class={`teaser rounded-lg flex justify-between gap-4 unset bg-img p-4 pb-0 md:p-6 md:pb-0 ${post.frontmatter.bgColor}`}
                   >
                     <div class="pb-4 md:pb-6 flex-1 flex flex-col justify-between">
                       <time class="text-text-muted text-sm" datetime={post.frontmatter.date.toISOString()}>
