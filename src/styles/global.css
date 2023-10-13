@@ -123,6 +123,7 @@
 
     h1 {
         font-family: theme('fontFamily.heading');
+        font-weight: 900;
     }
 }
 

@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         body: ["Onest", "sans-serif"],
-        heading: ["Dela Gothic One", "sans-serif"],
+        heading: ["Kanit", "sans-serif"],
       },
       colors: {
         transparent: "transparent",
