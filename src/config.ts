@@ -3,7 +3,7 @@
 
 export const SITE_TITLE = "Když to někdo nedomyslel.";
 export const SITE_DESCRIPTION =
-  "Welcome to my blog! I write about modern web development.";
+  "Osobní sbírka UI/UX fuckupů, u kterých se, kromě trochy legrace, můžete i něco naučit.";
 export const TWITTER_HANDLE = "@yourtwitterhandle";
 export const MY_NAME = "Když to někdo nedomyslel.";
 
