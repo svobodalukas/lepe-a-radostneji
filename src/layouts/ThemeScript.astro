@@ -5,7 +5,6 @@
 ---
 
 <script is:inline>
-  // figure out user's preferred theme and set it as html class for tailwind before paint
   (function () {
     if (typeof window !== "undefined") {
       const isSystemColorSchemeDark = window.matchMedia(
@@ -14,10 +13,10 @@
       const storageTheme = sessionStorage.getItem("theme");
       if (!storageTheme && isSystemColorSchemeDark) {
         document.documentElement.classList.add("dark");
-        document.head.children.namedItem("theme-color").content = "#0f172a";
+        document.head.children.namedItem("theme-color").content = "#262626";
       } else if (storageTheme === "dark") {
         document.documentElement.classList.add("dark");
-        document.head.children.namedItem("theme-color").content = "#0f172a";
+        document.head.children.namedItem("theme-color").content = "#262626";
       } else {
         // we already server render light theme
         document.head.children.namedItem("theme-color").content = "#ffffff";

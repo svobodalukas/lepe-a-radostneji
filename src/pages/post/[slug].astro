@@ -18,13 +18,7 @@ export async function getStaticPaths() {
   const filteredPosts = posts
     .filter((p) => p.frontmatter.draft !== true)
     .filter(({ frontmatter }) => !frontmatter.external);
-  /*
-    return filteredPosts.map((post) => {
-      return { params: { 
-        slug: post.slug 
-      }};
-    });
-  */
+    
   const numberOfPosts = filteredPosts.length // Total of all posts
 
   return filteredPosts.sort(sortByDate).map((post, i) => ({ // Map() all posts after sorting
