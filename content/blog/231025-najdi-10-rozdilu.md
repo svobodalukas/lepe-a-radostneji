@@ -12,21 +12,23 @@ Pojďme si dneska zahrát klasickou hru na hledání rozdílů. Mezi následují
 ![Najdi 10 rozdílů - 1](/images/231025-dane-1.webp)
 ![Najdi 10 rozdílů - 2](/images/231025-dane-2.webp)
 
-Abych trochu odsadil řešení a nepropálil tak pointu hned, tak trochu kontextu pro ty, co s finančním úřadem nemusí komunikovat. Na screenshotech výše je finální obrazovka, odkud odesíláte vaše daňové přiznání, měsíční přiznání k DPH a další písemnosti. Tedy ten klíčový krok, podobně jako třeba odeslání objednávky v eshopu nebo dokončení rezervace.
+Abych trochu odsadil řešení a nepropálil pointu hned, tak trochu kontextu pro ty, co s finančním úřadem nemusí komunikovat. Na screenshotech výše je finální obrazovka, odkud odesíláte vaše daňové přiznání, měsíční přiznání k DPH a další písemnosti. Tedy ten klíčový krok, podobně jako třeba odeslání objednávky v eshopu nebo dokončení rezervace.
 
-Pointou je ve výchozím stavu neaktivní tlačítko pro odeslání v pravém horním rohu. Teprve po pěti vteřinách se stane aktivním, což je mimochodem řešeno v kódu poměrně zábavně. Reálně se uživateli přepne neprůhlednost (opacity) z 65% na 100%.
+Pro odeslání pak musíte použít tlačítko "Podat" v pravém horním rohu, které je ve výchozím stavu neaktivní. Teprve po pěti vteřinách se stane aktivním, což je řešeno v kódu poměrně zábavně. Reálně se uživateli přepne neprůhlednost (opacity) z 65% na 100%.
 
 ![Podej písemnost](/images/231025-dane.gif)
 
-Pokud pominu logiku tohoto opatření, tak má toto "řešení" několik zásadních problémů.
+Pokud pominu spornou logiku opožděného odeslání, tak má toto "řešení" několik zásadních problémů.
 
-První z nich je spolehání jen na vizuální změnu mezi disabled/active stavy. Uživatelé s poruchou zraku (což je poměrně velká část populace, nejen "slepí" jak se někdy traduje) potřebují nějaké další vodítko.
+První z nich je spolehání jen na vizuální změnu mezi disabled/active stavem. Uživatelé ale potřebují nějaké další vodítko, než jen tuto špatně viditelnou změnu. Problém budou mít nejen lidé s poruchou zraku, ale i ti zdraví. Poruchou zraku mimochodem trpí poměrně velká část populace, nejde jen o "slepé". Stačí mít slabší zrak na blízko, zapomenuté brýle nebo poruchu barevného spektra a problém je na světě.
+
+## Co s tím?
 
 Co zkusit disabled stavu odebrat ten červený border?
 
 Co takhle použít úplně jinou barvu (tradiční šedou) namísto opacity? A nešlo by třeba změnit kurzor myši na not-allowed?
 
-A co takhle do titulku **neaktivního** tlačítka (když už mám dvě) dát něco jiného než _"Po stisku dojde (pokud písemnost neobsahuje kritické chyby) k závaznému podání písemnosti - bude odeslána na společné technické zařízení správců daně, odkud bude poté doručena na uvedený úřad k vyřízení."_?
+A co třeba do titulku **neaktivního** tlačítka (když už mám dvě) dát něco jiného než _"Po stisku dojde (pokud písemnost neobsahuje kritické chyby) k závaznému podání písemnosti - bude odeslána na společné technické zařízení správců daně, odkud bude poté doručena na uvedený úřad k vyřízení."_?
 
 Otázky, samé otázky.
 
