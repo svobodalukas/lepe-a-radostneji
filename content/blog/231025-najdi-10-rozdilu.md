@@ -32,7 +32,7 @@ A co třeba do titulku **neaktivního** tlačítka (když už mám dvě) dát n�
 
 Otázky, samé otázky.
 
-Otázky bude mít uživatel a bude přemýšlet, proč to vlastně nejde odeslat (vlastní zkušenost). Určitě by mu pomohlo, pokud by viděl nějaký loader či timer, který naznačí, že něco na pozadí probíhá a je potřeba ještě chvilku počkat. Třeba takto.
+Otázky bude mít uživatel a bude přemýšlet, proč to vlastně nejde odeslat (vlastní zkušenost). Určitě by mu pomohlo, pokud by viděl nějaký loader či timer, který naznačí, že něco na pozadí probíhá a je potřeba ještě chvilku počkat. Zároveň bych upravil styl tlačítek, protože rozhodně nemají stejnou důležitost. Třeba takto.
 
 ![Podej písemnost - lépe a radostněji](/images/231025-dane-2.gif)
 
