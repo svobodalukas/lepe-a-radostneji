@@ -1,7 +1,7 @@
 ---
 external: false
 title: "Kontrasty se přitahují. Někdy."
-description: "Jak správně naladit kontrast, aby z toho čtenáři něcco měli."
+description: "Jak správně naladit kontrast, aby z toho čtenáři něco měli."
 ogImagePath: "/images/231129-kontrasty.webp"
 bgColor: "teaser-navy"
 date: 2023-11-23
