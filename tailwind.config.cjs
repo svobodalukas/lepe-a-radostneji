@@ -38,6 +38,7 @@ module.exports = {
           header: "var(--color-bg-header)",
           selection: "rgb(var(--color-bg-selection) / <alpha-value>)",
           blue: "var(--color-bg-blue)",
+          navy: "var(--color-bg-navy)",
           green: "var(--color-bg-green)",
           orange: "var(--color-bg-orange)",
           yellow: "var(--color-bg-yellow)",

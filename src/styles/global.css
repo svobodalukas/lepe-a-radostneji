@@ -45,6 +45,7 @@
         --color-bg-header: rgb(245, 245, 245);
 
         --color-bg-blue: hsl(204, 94%, 94%);
+        --color-bg-navy: hsl(234, 94%, 94%);
         --color-bg-green: hsl(141, 84%, 93%);
         --color-bg-orange: hsl(34, 100%, 92%);
         --color-bg-yellow: hsl(55, 97%, 88%);
@@ -95,6 +96,7 @@
         --color-bg-header: #999;
 
         --color-bg-blue: hsl(204, 94%, 20%);
+        --color-bg-navy: hsl(234, 94%, 20%);
         --color-bg-green: hsl(141, 84%, 20%);
         --color-bg-orange: hsl(34, 100%, 20%);
         --color-bg-yellow: hsl(55, 97%, 20%);
@@ -213,6 +215,9 @@
 
     .teaser-blue {
         background-color: theme('colors.bg.blue');
+    }
+    .teaser-navy {
+        background-color: theme('colors.bg.navy');
     }
     .teaser-green {
         background-color: theme('colors.bg.green');
