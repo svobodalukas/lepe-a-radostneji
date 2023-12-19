@@ -3,7 +3,7 @@ external: false
 title: "Najdi 10 rozdílů"
 description: "Chcete podat daňové přiznání? Tak si počkejte."
 ogImagePath: "/images/231025-dane-1.webp"
-bgColor: "teaser-blue"
+bgColor: "teaser-navy"
 date: 2023-10-25
 ---
 

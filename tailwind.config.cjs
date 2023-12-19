@@ -48,6 +48,7 @@ module.exports = {
         border: {
           code: "rgb(var(--color-border-code) / <alpha-value>)",
           blue: "var(--color-border-blue)",
+          navy: "var(--color-border-navy)",
           green: "var(--color-border-green)",
           orange: "var(--color-border-orange)",
           yellow: "var(--color-border-yellow)",
