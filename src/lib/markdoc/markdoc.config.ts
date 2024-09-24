@@ -82,6 +82,7 @@ export const config: Config = {
         url: { type: String, required: true },
         width: { type: String, required: true },
         height: { type: String, required: true },
+        title: { type: String, required: true },
       },
       selfClosing: true,
     },

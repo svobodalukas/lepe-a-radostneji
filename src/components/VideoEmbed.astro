@@ -3,11 +3,14 @@ type Props = {
   url: string;
   width: string;
   height: string;
+  title: string;
 };
 
-const { url, width, height } = Astro.props;
+const { url, width, height, title } = Astro.props;
 ---
 
 <div>
-  <video src={url} width={width} height={height} controls></video>
+  <video src={url} width={width} height={height} controls>
+    <p>Váš prohlížeč nepodporuje video. Nevadí, jde v něm zhruba o toto:<br/> {title}</p>
+  </video>
 </div>
