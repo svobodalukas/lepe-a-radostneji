@@ -1,0 +1,13 @@
+---
+type Props = {
+  url: string;
+  width: string;
+  height: string;
+};
+
+const { url, width, height } = Astro.props;
+---
+
+<div>
+  <video src={url} width={width} height={height} controls></video>
+</div>

@@ -76,10 +76,12 @@ export const config: Config = {
       },
       selfClosing: true,
     },
-    tweet: {
-      render: "TweetEmbed",
+    video: {
+      render: "VideoEmbed",
       attributes: {
         url: { type: String, required: true },
+        width: { type: String, required: true },
+        height: { type: String, required: true },
       },
       selfClosing: true,
     },

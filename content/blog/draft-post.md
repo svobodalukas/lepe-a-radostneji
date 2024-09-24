@@ -105,12 +105,6 @@ You can embed YouTube videos in your blog posts.
 
 {% youtube url="https://www.youtube-nocookie.com/embed/StTqXEQ2l-Y" label="Everything is awesome - Lego movie song" /%}
 
-## Tweet
-
-You can embed tweets in your blog posts.
-
-{% tweet url="https://twitter.com/flexdinesh/status/1605685194312122370" /%}
-
 ## CodePen
 
 You can embed codepens in your blog posts.
